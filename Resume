@@ -1,0 +1,284 @@
+
+%-------------------------
+% Resume in Latex
+% Author
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\footskip}{4.08003pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=1cm, right=1.4cm, bottom=1cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\footskip}{4.08003pt}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Your Name} % Your Name
+\newcommand{\course}{Your Program} % Your Program
+\newcommand{\roll}{xxxxxxx} % Your Roll No.
+\newcommand{\phone}{xxxxxxxxxx} % Your Phone Number
+\newcommand{\emaila}{youremail@email.com} %Email 1
+\newcommand{\emailb}{officialemail@sliet.ac.in} %Email 2
+
+
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+
+\parbox{\dimexpr\linewidth-1.5cm\relax}{
+  \begin{tabularx}{\linewidth}{L r} 
+    \textbf{\Large BANOTHU.HARSHITH} & {\raisebox{0.0\height}{\footnotesize \faPhone}\ +91-6302388908} \\ 
+    \textcolor{gray}{\small banothuharshith2003@gmail.com} & \\
+  \end{tabularx}
+ \begin{flushright}
+    \vspace{-0.7cm} % Adjust the value as needed
+    \begin{tabularx}{0.21\linewidth}{rX}
+      \href{https://www.linkedin.com/in/harshith-banothu-83605b261/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ \textcolor{blue}{LinkedIn Profile}} & \\
+      \href{https://github.com/haxshith}{\raisebox{0.0\height}{\footnotesize \faGithub}\ \textcolor{blue}{GitHub Profile}} &
+    \end{tabularx}
+  \end{flushright}
+}
+
+
+
+
+
+
+
+
+%-----------EDUCATION-----------
+\vspace{-3.5mm}
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Information Technology, Lucknow}{CGPA: 8.12}
+      {Bachelor of Technology in Computer Science}{2022 - present}
+  \resumeSubHeadingListEnd
+  \vspace{-4.5mm}
+
+%
+
+%-----------Technical skills-----------------
+\section{\textbf{Technical Skills}}
+\begin{itemize}[left=0.1in,label={\tiny$\bullet$},itemsep=0pt]
+  \small
+  \item \textbf{Languages:} C++, Java, C, JavaScript, Python.
+  \item \textbf{Cloud/Databases:} SQL, MongoDB.
+  \item \textbf{Technologies:} Reactjs, Nextjs ,Node.js, TailwindCss, Express.js, HTML , CSS.
+  \item \textbf{Coursework:} Data Structures and Algorithms, Object-Oriented Programming, Database Management System.
+  \item \textbf{Areas of Interest:} Data Structures and Algorithms, Artificial Intelligence, Frontend development.
+   \item \textbf{Soft Skills:} Team player,Communication skills,Time management and logical thinking.
+\end{itemize}
+\vspace{-16pt}
+
+%-----------EXPERIENCE-----------------
+\section{\textbf{Experience}}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {HacktoberFest}{Hacktoberfest10}
+      {Open Source Contributor}{Oct 2023}
+      \resumeItemListStart
+        \resumeItem{OpenSource Contribution:}
+          {During Hacktoberfest 10, I took part in the event with enthusiasm and successfully merged a total of 4+2 pull requests. It was an incredible experience contributing to various projects, and I'm proud to have exceeded the Hacktoberfest requirements and a tree was planted on my name by Hacktoberfest as they are event organizers.}
+      \resumeItemListEnd
+      
+% --------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Equinox}{Anuual Fest, IIITL}
+      {Corporate Relations}{Dec 2022 - July 2023}
+      \resumeItemListStart
+        \resumeItem{Volunteer:}
+          {I played a crucial role in the organization's success by serving as the Corporate Relations representative. In this capacity, I fostered meaningful partnerships and collaborations between Equinox and corporate entities.}
+        \vspace{0.2mm} % Adjust the space as needed
+        \resumeItem{Public Relations Executive:}
+          {Having initially contributed as a Corporate Relations volunteer. I have been promoted to the role of Public Relations Executive at Equinox. In my second year, I have transitioned into a position where I now spearhead public relations efforts for the organization.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  \vspace{-16pt}
+
+%-----------PROJECTS-----------------
+\section{\textbf{Projects}}
+\resumeSubHeadingListStart
+
+    \resumeProject
+      {Pizzeria - Frontend Website}
+      {Frontend Pizza Delivery Web-Design}
+      
+
+      \resumeItemListStart
+        \item {Tools \& technologies used: HTML, CSS, JavaScript, React+Vite , Tailwind CSS For Responsive Design.}
+        \item {Developed a robust and scalable food delivery platform with a user-friendly interface, ensuring secure transactions and a seamless experience anad this is even hosted on netlify.}
+       \item GitHub repository: \href{https://github.com/haxshith/pizzeria}{Pizzeria-Github}
+      \resumeItemListEnd
+    \vspace{-2mm}
+    
+    \resumeProject
+      {Admin Authentication - Mern Stack.}
+      { Admin Panel project.}
+
+
+      \resumeItemListStart
+        \item {Tools \& technologies used: NodeJs, MySql, Sass, React+Vite, HTML, CSS, TailwindCss, JavaScript.}
+        \item {Developed a Admin Friendly Dashboard for helping the admin side authentication system and also made it responsive.}
+      \resumeItemListEnd
+    \vspace{-2mm}
+
+    \resumeProject
+      {Furniture Website - Frontend Website.}
+      {Furniture website which is with attractive UI.}
+    
+
+      \resumeItemListStart
+        \item {Tools \& technologies used: HTML, CSS, JavaScript, Tailwind CSS,React+Vite}
+        \item {Elegantly designed frontend furniture website showcasing a curated collection of stylish and functional pieces for contemporary living.}
+      \resumeItemListEnd
+    \vspace{-2mm}
+
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+
+
+%-----------Achievements-----------------
+\section{\textbf{Achievements}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{Rated 2 star@\href{https://www.codechef.com/users/ammiee}{CodeChef (Max: 1656.)}}{}{}
+\resumePOR{Rated 890 @\href{https://codeforces.com/profile/harshith2026}{CodeForces (Max: 1070.)}}{}{}
+\resumePOR{Solved more than 150 questions on CodeChef and Codeforces.}{}{}
+\resumePOR{Ranked 630 in CodeChef Starters 118 Division-4 Contest.}{}{}
+\resumePOR{Participated in Hacktober10 and successfully merged 4+2 prs and got exciting digital rewards.}{}{}
+\resumePOR{Selected as Open Source Contributor in GSSOC-2023.}{}{}
+\resumeSubHeadingListEnd
+\vspace{-5mm}
+
+
+
+%-----------Positions of Responsibility-----------------
+%-----------Positions of Responsibility-----------------
+\section{\textbf{Positions of Responsibility}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{Public Relations Executive .(Equinox-IIITL)}{}{2024}
+\resumePOR{Member of AfterDark. (The Photography Club-IIITL)}{}{2024}
+\resumePOR{Volunteer-Corporate Relations in Equinox.}{}
+{2023}
+\resumeSubHeadingListEnd
+\vspace{-5mm}
+
+
+%-------------------------------------------
+\end{document}
